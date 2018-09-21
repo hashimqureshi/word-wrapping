@@ -10,7 +10,7 @@ def wordWrapping(string, width):
                 len_line += len_word + 1
             elif len(word) > width:
                 for numberOfCharacters in range(0, len(word), width):
-                    print(word[numberOfCharacters:numberOfCharacters+width])
+                    print(word[numberOfCharacters:numberOfCharacters+width] +'-')
             else:
                 lines.append(' '.join(line))
                 line = [word]
